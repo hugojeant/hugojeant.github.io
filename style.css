@@ -1,21 +1,29 @@
 /*-----------------------------------------------------------------General-----------------------------------------------------------------*/
 
-html {
+body
+{
+    background: #17181c;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 0.9375vw;
+    color: white;
 }
 
 @media (max-width: 800px){
-html {
+.body {
     font-size: 1.750vw;
     }
 }
 
 @media (max-width: 550px){
-html {
+.body {
     font-size: 16px;
     }
 }
 
+h1, h3, p
+{
+    color: white;
+}
 /*-----------------------------------------------------------------NavBar-----------------------------------------------------------------*/
 
 .nav {
@@ -50,7 +58,9 @@ html {
     max-width: 8.750vw;
     width: 100%;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1rem;
 }
 
 @media (max-width: 800px){
@@ -72,7 +82,7 @@ html {
     margin: 0 0.9115vw;
     font-size: 1rem;
     line-height: 1rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -88,7 +98,7 @@ html {
     width: 0.260vw;
     height: 0.260vw;
     border-radius: 100%;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
 }
 
 @media (max-width: 800px){
@@ -104,14 +114,18 @@ html {
     left: 0;
     width: 100%;
     height: 2px;
-    background: rgb(158, 158, 158);
+    background: #17181c;
   }
 
 .nav-state {
     height: 8px;
-    background: #000000;
+    background: #ffffff;
     width: 0%;
   }
+
+/*------------------------------------------------------------------Mail------------------------------------------------------------------*/
+
+
 
 /*------------------------------------------------------------------Main------------------------------------------------------------------*/
 
@@ -123,16 +137,224 @@ html {
     position: relative;
     min-height: 45.573vw;
     margin-bottom: 10.027vw;
-    padding-top: 25.132vh;
+    padding-top: 20.132vh;
 }
 
 @media (max-width: 1024px){
 .main-header {
     min-height: auto;
-    padding-top: 18.174vw;
+    padding-top: 13.174vw;
     overflow: hidden;
     }
 }
+
+/*--------------------------------------------------------------Presentation--------------------------------------------------------------*/
+
+.presentation {
+    margin-bottom: 6.198vw;
+}
+
+@media (max-width: 800px){
+.presentation {
+    margin-bottom: calc(7.5vw * 1.5);
+    }
+}
+@media (max-width: 550px){
+.presentation {
+    margin-bottom: calc(64px * 1.5);
+    }
+}
+
+.presentation-row1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6.198vw;
+}
+
+@media (max-width: 800px){
+.presentation-row1 {
+    flex-direction: column;
+    margin-top: 7.5vw;
+    }
+}
+
+@media (max-width: 550px){
+.presentation-row1 {
+    margin-top: 64px;
+    }
+}
+
+.presentation-row1 h3 {
+    position: relative;
+    left: -.25vw;
+}
+
+@media (max-width: 800px){
+.presentation-row1 h3 {
+    margin-bottom: calc(7.5vw / 4);
+    }
+}
+
+@media (max-width: 550px){
+.presentation-row1 h3 {
+    font-size: 2.315rem !important;
+    margin-bottom: calc(64px / 2);
+    }
+}
+
+.presentation-row1 h1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    line-height: 1;
+    z-index: 2;
+}
+
+@media (max-width: 800px){
+.presentation-row1 h1 {
+    margin-left: 0;
+    }
+}
+
+@media (max-width: 550px){
+.presentation-row1 h1 {
+    font-size: 2.315rem !important;
+    }
+}
+
+
+
+.presentation-row2 {
+    display: grid;
+    grid-template-columns: 17.5vw 1fr 21.25vw;
+    grid-gap: 0 3.75vw;
+}
+
+@media (max-width: 800px){
+.presentation-row2 {
+    grid-template-columns: 1fr 1.5fr;
+    }
+}
+
+@media (max-width: 550px){
+.presentation-row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 0;
+    }
+}
+
+.presentation-col1 {
+    margin-top: -1.25vw;
+}
+
+@media (max-width: 800px){
+.presentation-row2 .presentation-col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    order: 2;
+    width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 550px){
+.presentation-row2 .presentation-col1 {
+    margin-top: calc(64px / 2);
+    }
+}
+
+@media (max-width: 800px){
+.presentation-row2 .presentation-col1 p {
+    margin-top: auto;
+    margin-bottom: calc(7.5vw / 2);
+    }
+}
+
+@media (max-width: 550px){
+.presentation-row2 .presentation-col1 p {
+    margin-bottom: calc(64px / 1.5);
+    }
+}
+
+.presentation-col2 {
+    margin-top: -3.85vw;
+}
+
+@media (max-width: 800px){
+.presentation-row2 .presentation-col2 {
+    order: 1;
+    }
+}
+
+@media (max-width: 550px){
+.presentation-row2 .presentation-col2 {
+    width: 100%;
+    margin-top: -15px;
+    }
+}
+
+.presentation-col2 .presentation-img {
+    position: relative;
+    height: 0;
+    padding-bottom: 109%;
+    
+}
+
+/*----------------------------------------------------------------Projects----------------------------------------------------------------*/
+
+@media (max-width: 480px){
+section {
+    padding: 60px 0px;
+    }
+}
+
+@media (max-width: 768px){
+section {
+    padding: 80px 0px;
+    }
+}
+
+section {
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
+}
+
+.head-section {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px,5vw,var(--fz-heading));
+    white-space: nowrap;
+}
+
+.list-projects {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 480px){
+.project-square {
+    margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px){
+.project-square {
+    margin-bottom: 70px;
+    }
+}
+.project-square {
+    margin-bottom: 100px;
+}
+
 /*-----------------------------------------------------------------Footer-----------------------------------------------------------------*/
 
 .ftr {
