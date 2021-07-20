@@ -1,106 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <title>Hugo Jeant</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-
-
+        <title>Hugo Jeant Portfolio</title>
     </head>
     <body>
-        <div class="nav">
-            <div class="nav-w">
-                <a class="logo" href="#">LOGO</a>
-                <div class="menu">
-                    <a href="#"><p>ABOUT</p></a>
-                    <div class="nav-sep"></div>
-                    <a href="#"><p>EXPERIENCE</p></a>
-                    <div class="nav-sep"></div>
-                    <a href="#"><p>WORK</p></a>
-                    <div class="nav-sep"></div>
-                    <a href="#"><p>CONTACT</p></a>
-                    <div class="nav-sep"></div>
-                    <a href="#"><p>RESUME</p></a>
-                </div>
-                <div class="nav-state-container">
-                    <div class="nav-state" id="progressBar"></div>
-                </div>
+
+        <div class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+            <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4"/>
+            </video>
+            <div class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
+                <h1 class="text-lg">Mechatronics Engineering Student</h1>
+                <h1 class="text-lg">at ESME Sudria</h1>
+                <h1 class="text-lg">based in Paris, France</h1>
+                <h1 class="text-lg">In search for an internship from</h1>
+                <h1 class="text-lg">1 january 2022 to 10 september 2022 </h1>
+            </div>
+            
+        </div>
+
+
+
+
+        <div class="flex h-screen justify-center items-center bg-green-500">
+            <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full h-screen max-w-none">
+                <source src="video/spots-on-it.mp4" type="video/mp4"/>
+            </video>
+            <div class="text-center z-30 text-white text-bold">
+                
+                <h1 class="text-lg">Mechatronics Engineering Student</h1>
+                <h1 class="text-lg">at ESME Sudria</h1>
+                <h1 class="text-lg">based in Paris, France</h1>
+                <h1 class="text-lg">In search for an internship from</h1>
+                <h1 class="text-lg">1 january 2022 to 10 september 2022 </h1>
+            </div>
+        </div>
+
+        <div class="flex h-screen justify-center items-center bg-blue-500">
+            <div class="text-center">
+                <h1 class="text-xs">Mechatronics Engineering Student</h1>
+                <h1 class="text-xs">at ESME Sudria</h1>
+                <h1 class="text-xs">based in Paris, France</h1>
+                <h1 class="text-xs">In search for an internship from</h1>
+                <h1 class="text-xs">1 january 2022 to 10 september 2022 </h1>
+            </div>
+        </div>
+
+        <div class="flex h-screen justify-center items-center">
+            <div class="text-center">
+                <h1 class="text-xs">Mechatronics Engineering Student</h1>
+                <h1 class="text-xs">at ESME Sudria</h1>
+                <h1 class="text-xs">based in Paris, France</h1>
+                <h1 class="text-xs">In search for an internship from</h1>
+                <h1 class="text-xs">1 january 2022 to 10 september 2022 </h1>
+            </div>
+        </div>
+
+        <div class="flex h-screen justify-center items-center">
+            <div class="text-center">
+                <h1 class="text-xs">Mechatronics Engineering Student</h1>
+                <h1 class="text-xs">at ESME Sudria</h1>
+                <h1 class="text-xs">based in Paris, France</h1>
+                <h1 class="text-xs">In search for an internship from</h1>
+                <h1 class="text-xs">1 january 2022 to 10 september 2022 </h1>
             </div>
         </div>
 
 
-        
-
-        <div class="main">
-            <div class="main-header">
-                
-                <div class="presentation">
-                    <div class="presentation-row1">
-                        <h3 class="presentation-title1">Hi !</h3>
-                        <h1 class="presentation-title2">
-                            <div>I'm Hugo Jeant,</div>
-                            <div>a mechatronics engineeer</div>
-                            <div>based in Paris</div>
-                        </h1>
-
-                    </div>
-                    <div class="presentation-row2">
-                        <div class="presentation-col1">
-                            <p>
-                                Elegance, precision and refinement are what represents me. I began to approach the world of 3D and graphic design, fascinated by the works of the great motion designers of the time. These interests led me to develop a personal aesthetic and introduced me to the world of Creative and Interactive Development.
-                            </p>
-                        </div>
-                        <div class="presentation-col2">
-                            <div class="presentation-img">
-                                <img src="photo.png">
-                            </div>
-                        </div>
-                        <div class="presentation-col3">
-
-                        </div>
-                    </div>
-                </div>
-                
-                <section class="projects">
-                    <h2 class="head-section">Work</h2>
-                    <ul class="list-projects">
-                        <li class="project-square">
-                            <div class="project-content">
-                                <h3 class="project-title"><a href="#" target="blank">Bras manipulateur</a></h3>
-                                <div class="project-description">
-                                    <p>
-                                        A nicer look at your GitHub profile and repository stats with data visualizations of your top languages and stars. Sort through your top repos by number of stars, forks, and size.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="project-image">
-
-                            </div>
-                        </li>
-                    </ul>
-                </section>
 
 
 
-            </div>
-        </div>
 
-        
 
-        <footer class="ftr">
-            <p>2021 - France</p>
 
-            <div class="rowFtr">
-                <p>Designed & Built by Hugo Jeant</p>
-            </div>
-            <div class="rowFtr">
-                <p>Back to top</p>
-            </div>
-        </footer>
+
+
+            <p class="mt-96">hlfiiieohiesfhzeohzohofhqohfozhqefohoehfohoqhfoe
+                oeqhfihoqhohhfohsfhosqfhesqohfoeqsoifhoeqhfohohfoihofoisqfohqeohf
+                qehfohqoifhoqehzfoihqeoifhoqzehoqfhzohfqoizehfpozqmfpohqomhefioqhf
+                iqezuiqhzeifhqeziofoiqhzefohqzioehfoizhqefoihqzoeifhozeqihfohqzoif
+                qziuefiehqzfohfqzeihqiozhoieqfhoeihoihqiohfoqhefihoqizhefoiqhfheoih
+                hlfiiieohiesfhzeohzohofhqohfozhqefohoehfohoqhfoe
+                oeqhfihoqhohhfohsfhosqfhesqohfoeqsoifhoeqhfohohfoihofoisqfohqeohf
+                qehfohqoifhoqehzfoihqeoifhoqzehoqfhzohfqoizehfpozqmfpohqomhefioqhf
+                iqezuiqhzeifhqeziofoiqhzefohqzioehfoizhqefoihqzoeifhozeqihfohqzoif
+                qziuefiehqzfohfqzeihqiozhoieqfhoeihoihqiohfoqhefihoqizhefoiqhfheoih
+                hlfiiieohiesfhzeohzohofhqohfozhqefohoehfohoqhfoe
+                oeqhfihoqhohhfohsfhosqfhesqohfoeqsoifhoeqhfohohfoihofoisqfohqeohf
+                qehfohqoifhoqehzfoihqeoifhoqzehoqfhzohfqoizehfpozqmfpohqomhefioqhf
+                iqezuiqhzeifhqeziofoiqhzefohqzioehfoizhqefoihqzoeifhozeqihfohqzoif
+                qziuefiehqzfohfqzeihqiozhoieqfhoeihoihqiohfoqhefihoqizhefoiqhfheoih
+                hlfiiieohiesfhzeohzohofhqohfozhqefohoehfohoqhfoe
+                oeqhfihoqhohhfohsfhosqfhesqohfoeqsoifhoeqhfohohfoihofoisqfohqeohf
+                qehfohqoifhoqehzfoihqeoifhoqzehoqfhzohfqoizehfpozqmfpohqomhefioqhf
+                iqezuiqhzeifhqeziofoiqhzefohqzioehfoizhqefoihqzoeifhozeqihfohqzoif
+                qziuefiehqzfohfqzeihqiozhoieqfhoeihoihqiohfoqhefihoqizhefoiqhfheoih
+                hlfiiieohiesfhzeohzohofhqohfozhqefohoehfohoqhfoe
+                oeqhfihoqhohhfohsfhosqfhesqohfoeqsoifhoeqhfohohfoihofoisqfohqeohf
+                qehfohqoifhoqehzfoihqeoifhoqzehoqfhzohfqoizehfpozqmfpohqomhefioqhf
+                iqezuiqhzeifhqeziofoiqhzefohqzioehfoizhqefoihqzoeifhozeqihfohqzoif
+                qziuefiehqzfohfqzeihqiozhoieqfhoeihoihqiohfoqhefihoqizhefoiqhfheoih
+                hlfiiieohiesfhzeohzohofhqohfozhqefohoehfohoqhfoe
+                oeqhfihoqhohhfohsfhosqfhesqohfoeqsoifhoeqhfohohfoihofoisqfohqeohf
+                qehfohqoifhoqehzfoihqeoifhoqzehoqfhzohfqoizehfpozqmfpohqomhefioqhf
+                iqezuiqhzeifhqeziofoiqhzefohqzioehfoizhqefoihqzoeifhozeqihfohqzoif
+                qziuefiehqzfohfqzeihqiozhoieqfhoeihoihqiohfoqhefihoqizhefoiqhfheoih
+
+            </p>
+          </div>
 
     </body>
 </html>
