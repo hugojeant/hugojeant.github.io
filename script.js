@@ -1,8 +1,7 @@
-window.onscroll = function() {scrollBarFunction()};
+const rellax = new Rellax('.rellax');
 
-function scrollBarFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("progressBar").style.width = scrolled + "%";
-}
+// grabs the media query
+const motionMediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+// if the user prefers reduced motion, disable parallax
+if (motionMediaQuery.matches) rellax.destroy();
