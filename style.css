@@ -3,16 +3,15 @@
   }
   
   html {
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 300;
     line-height: 1.25;
   }
   
   .site {
-    background: radial-gradient(50% 50% at 50% 50%, rgba(123, 131, 126, 0.9) 0%, rgba(54, 75, 73, 0.9) 100%), #364b49;
-    background-repeat: no-repeat;
-    color: #FFF;
+    background-color: #C1C1BF;
+    color: #202020;
     min-height: 120vh; /* allows room for scrolling to see parallax */
     height: 100%;
   }
@@ -69,6 +68,17 @@
     min-height: 100vh; /* make content as tall as the viewport */
     width: 100%;
   }
+
+@media screen and (max-width: 40rem) {
+    .main {
+        padding: 5rem 0;
+        display: flex;
+        justify-content: top; /* center content horizontally */
+        align-items: top; /* center content vertically */
+        min-height: 100vh; /* make content as tall as the viewport */
+        width: 100%;
+    }
+}
   
   .container {
     position: relative;
@@ -84,7 +94,7 @@
       .heading {
           font-size: 2rem;
           position: absolute;
-          left: 0;
+          left: 0px;
           top: 6rem;
           z-index: 10; /* to be on top of grid */
       }
@@ -195,3 +205,108 @@
     grid-row: 1 / 6;
     z-index: 1;
   }
+
+.content {
+    display: grid;
+    --column-gap: 2rem;
+    --row-gap: 10vh;
+    --mwidth: 400px;
+    --columns: 3;
+    max-width: calc(var(--mwidth) * var(--columns) + (var(--columns) - 1) * var(--column-gap));
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--mwidth)/2), var(--mwidth)));
+    grid-column-gap: var(--column-gap);
+    grid-row-gap: var(--row-gap);
+    justify-content: center;
+    padding: 0rem 0 20rem;
+    margin-top: 0rem;
+}
+
+.item {
+    margin: 0;
+    padding: 2rem;
+    align-self: end;
+    display: grid;
+    grid-template-areas:
+        "... ... ..."
+        "pretitle pretitle pretitle"
+        "title title tile"
+        "... counter counter"
+        "... description ...";
+    grid-template-columns: 10% 1fr 1rem;
+    grid-template-rows: 3rem auto 1fr 2rem auto;
+}
+
+.item__fig {
+    position: relative;
+    max-width: 100%;
+    grid-area: 1 / 2 / 4 / 3;
+    margin: 0;
+}
+
+.aspect {
+    padding-top: var(--aspect);
+}
+
+.item__img {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    z-index: auto;
+}
+
+.item__pretitle {
+    font-family: vortice-concept, sans-serif;
+    font-weight: 400;
+    color: var(--color-secondary);
+    font-size: 1rem;
+    margin: 0 0 0.75rem;
+    grid-area: pretitle;
+    display: flex;
+    pointer-events: none;
+}
+
+.item__title {
+    font-family: vortice-concept, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    -webkit-text-stroke: 1px var(--color-primary);
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 2.5rem;
+    grid-area: title;
+    pointer-events: none;
+}
+
+.item__counter {
+    font-family: vortice-concept, sans-serif;
+    font-weight: 400;
+    color: var(--color-primary);
+    font-size: 3rem;
+    grid-area: counter;
+    align-self: end;
+    justify-self: end;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.item__description {
+    max-width: 200px;
+    grid-area: description;
+    font-size: 0.85rem;
+    color: var(--color-description);
+}
+
+
+
+.main2{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center; /* center content horizontally */
+    align-items: center; /* center content vertically */
+    min-height: 100vh; /* make content as tall as the viewport */
+    width: 100%;
+}
