@@ -1,185 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Codrops Cutout Collage Layout with CSS Grid and Clip-path Demo</title>
-</head>
-<body class="site">
-  <header class="site__header">
-    <p>What: <span class="block">An internship</span></p>
-    <p>When: <span class="block">January 01-2022</span></p>
-    <p>Where: <span class="block">Anywhere</span></p>
-     <nav class="site__nav">
-      <ul class="site__nav-list">
-        <li><a class="site__nav-link" href="/">Work</a></li>
-        <li><a class="site__nav-link"  href="/">About</a></li>
-        <li><a class="site__nav-link"  href="/">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main class="main">
-    <div class="container">
-        <h1 class="heading rellax" data-rellax-speed="-5">
-          <mark>Hi !</mark>
-          <br />
-          <mark>I'm Hugo Jeant,</mark>
-          <br />  
-          <mark>a mechatronics engineer student</mark>
-        </h1>
-      
-        <div class="grid-container">
-        <div class="grid" aria-hidden="true">
-          <div class="grid__item grid__item--bg">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/codrops-portrait-bg.jpg" alt="">
-        </div>
-        <div class="grid__item grid__item--portrait-half rellax" data-rellax-speed="3">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/codrops-portrait-half.jpg" alt="">
-        </div>
-        <div class="grid__item grid__item--portrait-neck rellax" data-rellax-speed="-5">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/codrops-portrait-neck.jpg" alt="">
-        </div>
-        <div class="grid__item grid__item--portrait-left rellax" data-rellax-speed="4">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/codrops-portrait-shirt-left.jpg" alt="">
-        </div>
-        <div class="grid__item grid__item--portrait-eye rellax" data-rellax-speed="1">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/codrops-eye.jpg" alt="">
-        </div>
-        <div class="grid__item grid__item--portrait-shirt rellax" data-rellax-speed="4">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/codrops-portrait-shirt.jpg" alt="">
-        </div>
-        <div class="grid__item grid__item--portrait-bg-1 rellax" data-rellax-speed="-2">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/codrops-bg-1.png" alt="">
-        </div>
-        <div class="grid__item grid__item--portrait-bg-2 rellax" data-rellax-speed="3">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/codrops-bg-2.jpg" alt="">
-        </div>
-        <div class="grid__item grid__item--portrait-bg-3 rellax" data-rellax-speed="3">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/codrops-bg-1.png" alt="">
-        </div>
-        <div class="grid__item grid__item--portrait-bg-4 rellax" data-rellax-speed="-8">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/codrops-bg-2.jpg" alt="">
-        </div>
-      </div>
-     </div>
-    </div>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="background-effect">
 
-    
+            <div class="container-page">
+                <div class="navbar">
 
-  </main>
-  <div class="main2">
-  <div class="container">
-        <h1 class="heading rellax" data-rellax-speed="-5">
-          <mark>01.Work</mark>
-        </h1>
-        <div class="content">
-            <div class="item">
-                <figure class="item__fig">
-                    <div class="aspect" style="--aspect: 151.75%">
-                        <img class="item__img" src="img-01.jpg" alt="image1">
+                </div>
+
+                <div class="psct">
+                    <h1 class="ps-text">Projects</h1>
+                    <div class="ps-container">
+
+                        <div class="ps-c-card">
+                            <div class="ps-c-c-ligne"></div>
+                            <div class="ps-c-c-infoligne">
+                                <div class="ps-c-c-i-nbr">/00-1/</div>
+                                <div class="ps-c-c-i-theme">Robotics</div>
+                                <div class="ps-c-c-i-date">18.7.2021</div>
+                            </div>
+                            <div class="ps-adjust">
+                                <div class="ps-c-c-text">
+                                    <div class="vide"></div>
+                                    <div class="ps-c-c-t-name">4 axis robot.</div>
+                                    <p class="ps-c-c-t-description">This robot was developped for a school project. please click the link to learn more about the process.</p>
+                                    <a class="ps-c-c-t-learn">Explore project</a>
+                                </div>
+                                <img src="1.jpg" alt="" class="ps-c-c-img">
+                            </div>
+                        </div>
+
+                        <div class="ps-c-card">
+                            <div class="ps-c-c-ligne"></div>
+                            <div class="ps-c-c-infoligne">
+                                <div class="ps-c-c-i-nbr">/00-1/</div>
+                                <div class="ps-c-c-i-theme">Robotics</div>
+                                <div class="ps-c-c-i-date">18.7.2021</div>
+                            </div>
+                            <div class="ps-adjust">
+                                <div class="ps-c-c-text">
+                                    <div class="ps-c-c-t-name">4 axis robot.</div>
+                                    <p class="ps-c-c-t-description">This robot was developped for a school project. please click the link to learn more about the process.</p>
+                                    <a class="ps-c-c-t-learn">Explore project</a>
+                                </div>
+                                <img src="1.jpg" alt="" class="ps-c-c-img">
+                            </div>
+                        </div>
+
+                        <div class="ps-c-card">
+                            <div class="ps-c-c-ligne"></div>
+                            <div class="ps-c-c-infoligne">
+                                <div class="ps-c-c-i-nbr">/00-1/</div>
+                                <div class="ps-c-c-i-theme">Robotics</div>
+                                <div class="ps-c-c-i-date">18.7.2021</div>
+                            </div>
+                            <div class="ps-adjust">
+                                <div class="ps-c-c-text">
+                                    <div class="ps-c-c-t-name">4 axis robot.</div>
+                                    <p class="ps-c-c-t-description">This robot was developped for a school project. please click the link to learn more about the process.</p>
+                                    <a class="ps-c-c-t-learn">Explore project</a>
+                                </div>
+                                <img src="1.jpg" alt="" class="ps-c-c-img">
+                            </div>
+                        </div>
+
+                        <div class="ps-c-card">
+                            <div class="ps-c-c-ligne"></div>
+                            <div class="ps-c-c-infoligne">
+                                <div class="ps-c-c-i-nbr">/00-1/</div>
+                                <div class="ps-c-c-i-theme">Robotics</div>
+                                <div class="ps-c-c-i-date">18.7.2021</div>
+                            </div>
+                            <div class="ps-adjust">
+                                <div class="ps-c-c-text">
+                                    <div class="ps-c-c-t-name">4 axis robot.</div>
+                                    <p class="ps-c-c-t-description">This robot was developped for a school project. please click the link to learn more about the process.</p>
+                                    <a class="ps-c-c-t-learn">Explore project</a>
+                                </div>
+                                <img src="1.jpg" alt="" class="ps-c-c-img">
+                            </div>
+                        </div>
+
                     </div>
-                    
-                </figure>
-                <span class="item__pretitle">Cartesian Man</span>
-                <h2 class="item__title">Actuator</h2>
-                <span class="item__counter">01</span>
-                <p class="item__description">Life lived in the absence 
-                of the psychedelic experience is life trivialized, life denied, 
-                life enslaved to the ego.
-                </p>
-            </div>
-
-            <div class="item">
-                <figure class="item__fig">
-                    <div class="aspect" style="--aspect: 151.75%">
-                        <img class="item__img" src="img-01.jpg" alt="image1">
-                    </div>
-                    
-                </figure>
-                <span class="item__pretitle">Cartesian Man</span>
-                <h2 class="item__title">Actuator</h2>
-                <span class="item__counter">01</span>
-                <p class="item__description">Life lived in the absence 
-                of the psychedelic experience is life trivialized, life denied, 
-                life enslaved to the ego.
-                </p>
-            </div>
-
-            <div class="item">
-                <figure class="item__fig">
-                    <div class="aspect" style="--aspect: 151.75%">
-                        <img class="item__img" src="img-01.jpg" alt="image1">
-                    </div>
-                    
-                </figure>
-                <span class="item__pretitle">Cartesian Man</span>
-                <h2 class="item__title">Actuator</h2>
-                <span class="item__counter">01</span>
-                <p class="item__description">Life lived in the absence 
-                of the psychedelic experience is life trivialized, life denied, 
-                life enslaved to the ego.
-                </p>
-            </div>
-
-            <div class="item">
-                <figure class="item__fig">
-                    <div class="aspect" style="--aspect: 151.75%">
-                        <img class="item__img" src="img-01.jpg" alt="image1">
-                    </div>
-                    
-                </figure>
-                <span class="item__pretitle">Cartesian Man</span>
-                <h2 class="item__title">Actuator</h2>
-                <span class="item__counter">01</span>
-                <p class="item__description">Life lived in the absence 
-                of the psychedelic experience is life trivialized, life denied, 
-                life enslaved to the ego.
-                </p>
-            </div>
-
-            <div class="item">
-                <figure class="item__fig">
-                    <div class="aspect" style="--aspect: 151.75%">
-                        <img class="item__img" src="img-01.jpg" alt="image1">
-                    </div>
-                    
-                </figure>
-                <span class="item__pretitle">Cartesian Man</span>
-                <h2 class="item__title">Actuator</h2>
-                <span class="item__counter">01</span>
-                <p class="item__description">Life lived in the absence 
-                of the psychedelic experience is life trivialized, life denied, 
-                life enslaved to the ego.
-                </p>
-            </div>
-
-            <div class="item">
-                <figure class="item__fig">
-                    <div class="aspect" style="--aspect: 151.75%">
-                        <img class="item__img" src="img-01.jpg" alt="image1">
-                    </div>
-                    
-                </figure>
-                <span class="item__pretitle">Cartesian Man</span>
-                <h2 class="item__title">Actuator</h2>
-                <span class="item__counter">01</span>
-                <p class="item__description">Life lived in the absence 
-                of the psychedelic experience is life trivialized, life denied, 
-                life enslaved to the ego.
-                </p>
-            </div>
+                
+                </div>
 
             
         </div>
-    </div>
-</div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    </body>
 </html>
